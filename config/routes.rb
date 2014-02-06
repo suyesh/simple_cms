@@ -1,4 +1,4 @@
 SimpleCms::Application.routes.draw do
-  get "demo/index"
   
+  match ':controller(/:action(/:id))', :via => [:get, :post]
 end
